@@ -47,59 +47,11 @@ export default function ContactPage() {
 
 			<div className="Contents">
 				<Window title="Telegram">
-					You can find me on Telegram at <a href="https://telegram.me/metalloriff">telegram.me/metalloriff</a>
+					You can find me on Telegram at <a href="https://telegram.me/RIVAEROS">telegram.me/RIVAEROS</a>.
 				</Window>
 
 				<Window title="Discord">
-					You can join my Discord server with invite link <a href="https://discord.gg/Dfb96RJst6">Dfb96RJst6</a>, visit my profile directly <a href="https://discord.com/users/264163473179672576">here</a>, or copy my Discord username <a href="#" onClick={() => copyToClipboard("metalloriff")}>metalloriff</a>.
-				</Window>
-
-				<Window title="Email Generator">
-					<h3 className="Title">Contact Reason</h3>
-
-					<Dropdown callback={r => setContactReason(r)}>
-						{[
-							"Job Inquiries",
-							"One-time Commission",
-							"Other"
-						]}
-					</Dropdown>
-
-					<h3 className="Title">Subject</h3>
-
-					<p>
-						A brief description of what you would like to talk about.<br />
-						Ex: Need a website, need a logo, I have a question, etc.
-					</p>
-
-					<input
-						type="text"
-						value={subject}
-						onChange={(e) => setSubject(e.target.value)}
-						maxLength={48}
-						placeholder="Subject"
-					/>
-
-					<h3 className="Title">Message Body</h3>
-
-					<p>
-						The message you would like to send.<br />
-						If you're looking to commission me, a general budget is very helpful, but not necessary.
-					</p>
-
-					<textarea
-						value={body}
-						onChange={(e) => setBody(e.target.value)}
-						maxLength={1024}
-						placeholder="Message Body"
-					/>
-
-					<LinkWrapper
-						className="MainButton FlexCenter"
-						href={`mailto:mail@kinzoku.one?subject=${encodeURIComponent(`${contactReason}: `)}${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-					>
-						<Send /> Send
-					</LinkWrapper>
+					You can join my Discord server with invite link <a href="https://discord.gg/Dfb96RJst6">Dfb96RJst6</a>, or copy my Discord username <a href="#" onClick={() => copyToClipboard("rivaeros")}>rivaeros</a>.
 				</Window>
 			</div>
 		</div>

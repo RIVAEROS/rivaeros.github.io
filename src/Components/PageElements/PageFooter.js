@@ -10,10 +10,9 @@ import Tooltip from "../Tooltip";
 export default function PageFooter() {
 	const contacts = {
 		website: () => Toasts.showToast("You're already here 🌚"),
-		github: () => window.open("https://github.com/metalloriff", "_blank"),
-		twitter: () => window.open("https://twitter.com/Metalloriff", "_blank"),
-		email: () => window.open("mailto:metalloriff@gmail.com", "_blank"),
-		discord: () => copyToClipboard("Metalloriff 💕🌈#2891")
+		github: () => window.open("https://github.com/RIVAEROS", "_blank"),
+		email: () => window.open("mailto:rivaeros@proton.me", "_blank"),
+		discord: () => copyToClipboard("@rivaeros")
 	};
 
 	return (
@@ -24,7 +23,7 @@ export default function PageFooter() {
 						<img className="Logo" src={Icon} alt="Logo" />
 
 						<div>
-							<h2>Metalloriff</h2>
+							<h2>RIVÆROS</h2>
 							<div>
 								Made with <img src={Heart} alt="♥" width={15} height={15} />
 							</div>
@@ -60,9 +59,9 @@ export default function PageFooter() {
 
 				<div className="RightSections FlexCenter">
 					<div className="LinksSection">
-						<a href="https://github.com/Metalloriff/metalloriff.github.io">Source Code</a>
+						<a href="https://github.com/RIVAEROS/rivaeros.github.io">Source Code</a>
 						<a href="https://feathericons.com/">Icons Used</a>
-						<a href="https://metalloriff.github.io/city-fog">Color Palette</a>
+						<a href="https://rivaeros.github.io/city-fog">Color Palette</a>
 						<a href="https://paypal.me/israelboone">
 							<img src={Heart} alt="♥" width={15} height={15} />
 							<span style={{ margin: "0 7px" }}>Donate</span>

@@ -1,15 +1,15 @@
 ﻿import * as Feather from "react-feather";
-import Icon from "../../Assets/icon50x50.png";
+import Icon from "../../Assets/Logo.png";
 import { copyToClipboard } from "../Modals";
 import Tooltip from "../Tooltip";
 import "./PageFooter.scss";
 
 export default function PageFooter() {
 	const contacts = {
-		website: () => window.open("https://kinzoku.one/", "_blank"),
-		github: () => window.open("https://github.com/metalloriff", "_blank"),
-		email: () => window.open("https://kinzoku.one/contact", "_blank"),
-		discord: () => copyToClipboard("@metalloriff")
+		website: () => window.open("https://rivaeros.com/", "_blank"),
+		github: () => window.open("https://github.com/RIVAEROS", "_blank"),
+		email: () => window.open("https://rivaeros.com/contact", "_blank"),
+		discord: () => copyToClipboard("@rivaeros")
 	};
 
 	return (
@@ -20,7 +20,7 @@ export default function PageFooter() {
 						<img className="Logo" src={Icon} alt="Logo" />
 
 						<div className="BodySection">
-							<h2>Metalloriff</h2>
+							<h2>RIVÆROS</h2>
 
 							<div>
 								Web designer
@@ -58,9 +58,9 @@ export default function PageFooter() {
 				<div className="RightSections FlexCenter">
 					<div className="LinksSection Flex">
 						<div className="Contents Flex">
-							<div className="Title">Kinzoku.one</div>
-							<a href="https://kinzoku.one/">Root</a>
-							<a href="https://requiem.kinzoku.one/">Requiem</a>
+							<div className="Title">RIVÆROS</div>
+							<a href="https://rivaeros.com/">Root</a>
+							<a href="https://requiem.rivaeros.com/">Requiem</a>
 						</div>
 
 						<div className="Contents Flex">
@@ -73,23 +73,23 @@ export default function PageFooter() {
 
 						<div className="Contents Flex">
 							<div className="Title">Resources</div>
-							<a href="https://metalloriff.github.io/city-fog">Color Palette</a>
+							<a href="https://rivaeros.github.io/city-fog">Color Palette</a>
 							<a href="https://feathericons.com">Icons Used</a>
-							<a href="https://github.com/metalloriff/metalloriff.github.io">Source Code</a>
+							<a href="https://github.com/RIVAEROS/rivaeros.github.io">Source Code</a>
 						</div>
 
 						<div className="Contents Flex">
-							<div className="Title">Metalloriff</div>
-							<a href="https://kinzoku.one/donate">Support Me</a>
-							<a href="https://kinzoku.one">My Projects</a>
-							<a href="https://kinzoku.one/contact">Contact</a>
+							<div className="Title">RIVÆROS</div>
+							<a href="https://rivaeros.com/donate">Support Me</a>
+							<a href="https://rivaeros.com">My Projects</a>
+							<a href="https://rivaeros.com/contact">Contact</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div className="Copyright FlexCenter">
-				Copyright© {new Date().getFullYear()} Metalloriff
+				Copyright© {new Date().getFullYear()} RIVÆROS
 			</div>
 		</footer>
 	);

@@ -2,10 +2,11 @@ import { Window } from "../App";
 import { copyToClipboard } from "../Components/Modals";
 import "./DonatePage.scss";
 import { Header } from "./Home";
+import QrCode from "../Components/General/QrCode";
 
 const cryptoWallets = {
-	"Bitcoin (BTC)": "3KdJ97q9vWZpSfKLT5HyXerpthh5eXxwLk",
-	"Ethereum (ETH)": "0x69a9b0b6Ea7f33047F88701fF00c05631F39E645"
+	"Monero (XMR) - preferred": "8ANnJ8Corb3FPVvknrprmQdCsPEmQ9dJMDx8ZpaZHgcViCSKZSwYg7eJEwF8UbTxmAA3mLB4hyELiVteF2gdAVYXGejGMfG",
+	"Litecoin (LTC)": "ltc1qrlva4wd8emzznpgmdpcsqqnxwlkv60eehmjwj4"
 };
 
 export default function DonatePage() {
@@ -16,11 +17,11 @@ export default function DonatePage() {
 			<div className="Contents">
 				<Window title="How your donations help ♥">
 					<p>
-						I strive to make as many projects as possible free of charge. Receiving donations helps me upkeep any database/server costs for projects that require it. Along with the yearly charge for domains.
+						I strive to make all of my projects free and open-source. Donations help me stay alive and upkeep any database/server costs for projects that require it, along with the yearly charge for domains.
 					</p>
 
 					<p>
-						My aspiration in life is to earn enough income via donations to keep making these free projects. Donations from those who can afford it help me to keep my projects free for those who can't.
+						Donations from those who can afford it help me to keep my projects free for those who can't.
 					</p>
 				</Window>
 
@@ -46,11 +47,34 @@ export default function DonatePage() {
 					</p>
 
 					<div className="Links FlexCenter">
-						<a href="https://ko-fi.com/metalloriff">
-							Ko-fi.com/Metalloriff
+						<a href="https://ko-fi.com/rivaeros">
+							Ko-fi.com/RIVAEROS
 						</a>
 					</div>
 				</Window>
+
+				<div className="Wallets">
+					{Object.keys(cryptoWallets).map(key => (
+						<Window title={key} key={key}>
+							<div className="Wallet">
+								<p
+									className="Address FlexCenter"
+									onClick={() => {
+										copyToClipboard(
+											cryptoWallets[key]
+										);
+									}}
+								>
+									{cryptoWallets[key]}
+								</p>
+
+								<QrCode>
+									{cryptoWallets[key]}
+								</QrCode>
+							</div>
+						</Window>
+					))}
+				</div>
 			</div>
 		</div>
 	);

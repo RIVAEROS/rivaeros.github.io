@@ -90,11 +90,11 @@ function Projects() {
 			<div className="FlexCenter ThatsNotAllFolks">
 				<Window title="How your donations help ♥">
 					<p>
-						I strive to make as many projects as possible free of charge. Receiving donations helps me upkeep any database/server costs for projects that require it. Along with the yearly charge for domains.
+						I strive to make all of my projects free and open-source. Donations help me stay alive and upkeep any database/server costs for projects that require it, along with the yearly charge for domains.
 					</p>
 
 					<p>
-						My aspiration in life is to earn enough income via donations to keep making these free projects. Donations from those who can afford it help me to keep my projects free for those who can't.
+						Donations from those who can afford it help me to keep my projects free for those who can't.
 					</p>
 
 					<p>
@@ -112,7 +112,7 @@ export function Header() {
 			<div className="FlexCenter">
 				<img src={Logo} alt="Rifu" className="Logo" />
 
-				<h1 className="Title">kinzoku<span>.one</span></h1>
+				<h1 className="Title">RIVÆROS<span>.com</span></h1>
 			</div>
 
 			<div className="HeaderButtons FlexCenter">
@@ -144,7 +144,7 @@ export function Header() {
 				</LinkWrapper>
 
 				<LinkWrapper
-					href="https://github.com/metalloriff"
+					href="https://github.com/RIVAEROS"
 					className="Button FlexCenter Col"
 				>
 					<GitHub />
@@ -245,7 +245,7 @@ function HeadIntro() {
 		<div className="HeadIntro" ref={ref}>
 			<div className="TitleBarMockup FlexCenter">
 				<div className="Title">
-					Intro.one
+					about:me
 				</div>
 
 				<div className="Buttons FlexCenter">
@@ -268,38 +268,35 @@ function HeadIntro() {
 
 			<h1><br /></h1>
 
-			<h1>A passionate hobbyist <b>[</b></h1>
+			<h1>A passionate <b>[</b></h1>
+			<h1><b style={{ marginLeft: 40 }}><span>Game</span></b>,   </h1>
 			<h1><b style={{ marginLeft: 40 }}><span>Web</span></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span>Software</span></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span>Game </span></b></h1>
+			<h1><b style={{ marginLeft: 40 }}><span>Software</span></b></h1>
 			<h1><b>]</b> developer <b>&&</b> designer;</h1>
 
 			<h1><br /></h1>
 
 			<h1 data-scroll-to={true}>Some of my hobbies include <b>[</b></h1>
-			<h1><b style={{ marginLeft: 40 }}><a href="https://github.com/metalloriff">Programming</a></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><a href="https://www.printables.com/@Metalloriff_1158555">3D Printing</a></b>,   </h1>
+			<h1><b style={{ marginLeft: 40 }}><a href="https://github.com/rivaeros">Programming</a></b>,   </h1>
+			<h1><b style={{ marginLeft: 40 }}><span>Homelabbing</span></b>,   </h1>
+			<h1><b style={{ marginLeft: 40 }}><span>Soap Making</span></b>,   </h1>
+			<h1><b style={{ marginLeft: 40 }}><span>3D Printing</span></b>,   </h1>
 			<h1><b style={{ marginLeft: 40 }}><span>Digital Art</span></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><a href="https://soundcloud.com/metalloriff">Music Production</a></b></h1>
+			<h1><b style={{ marginLeft: 40 }}><a href="https://soundcloud.com/rivaeros">Music Production</a></b></h1>
 			<h1><b>]</b>;</h1>
 
 			<h1><br /></h1>
 
 			<h1 data-scroll-to={true}>I work with <b>[</b></h1>
 			<h1><b style={{ marginLeft: 40 }}><i>// Fluent</i></b>   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span>JavaScript</span></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span>CSS <b>||</b> SCSS</span></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span>ReactJS</span></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span>HTML</span></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span>C#</span></b>,   </h1>
+			<h1><b style={{ marginLeft: 40 }}><span>Godot <b>+</b> GDScript</span></b>,   </h1>
 			<h1><b style={{ marginLeft: 40 }}><span>Python</span></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span><b>(</b>3D <b>||</b> 2D<b>)</b> Animation</span></b>,  </h1>
+			<h1><b style={{ marginLeft: 40 }}><span>JavaScript <b>+</b> JSX</span></b>,   </h1>
+			<h1><b style={{ marginLeft: 40 }}><span>HTML <b>+</b> CSS</span></b>,   </h1>
 
 			<h1><br /></h1>
 
 			<h1><b style={{ marginLeft: 40 }}><i>// Intermediate</i></b>   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span>Java</span></b>,   </h1>
-			<h1><b style={{ marginLeft: 40 }}><span>Lua</span></b>,  </h1>
 			<h1><b style={{ marginLeft: 40 }}><span>3D Modeling</span></b>,  </h1>
 			<h1><b style={{ marginLeft: 40 }}><span>Digital Art</span></b>,  </h1>
 			<h1><b style={{ marginLeft: 40 }}><span>Vector Design</span></b>  </h1>
@@ -308,11 +305,11 @@ function HeadIntro() {
 			<h1><br /></h1>
 
 			<h1 data-scroll-to={true}>You can view my  </h1>
-			<h1>personal projects <b>below</b>.  </h1>
+			<h1>projects <b>below</b>.  </h1>
 
 			<h1><br /></h1>
 
-			<h1>Contact/hire me <b><a href="/contact">here</a></b>!</h1>
+			<h1>Contact me <b><a href="/contact">here</a></b>!</h1>
 
 			<h1><br /></h1>
 
